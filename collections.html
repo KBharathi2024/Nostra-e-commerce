@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="collections.css" /> 
+      <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+   <body> 
+
+      <body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-amber-300 shadow sticky top-0 z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="#" class="text-2xl font-bold text-blue-700">Nostra</a>
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-gray-800 hover:text-blue-700">Home</a>
+        <a href="collections.html" class="text-gray-800 hover:text-blue-700">Products</a>
+        
+        <a href="./contact.html" class="text-gray-800 hover:text-blue-700">Contact</a>
+      </nav>
+      <!-- <div class="relative">
+        <button id="cartBtn" class="p-2 rounded-full text-gray-600 hover:text-blue-700 hover:bg-gray-200 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13L3 3m0 0l1 5h16l1-5"/>
+          </svg>
+          <span id="cartBadge" class="absolute -top-1 -right-2 bg-red-500 text-white text-xs rounded-full px-1.5">0</span>
+        </button>
+      </div> -->
+    </div>
+  </header>
+
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="filter">
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Topwear')">
+          Topwear
+        </button>
+        <button class="button-value" onclick="filterProduct('Bottomwear')">
+          Bottomwear
+        </button>
+        <button class="button-value" onclick="filterProduct('Jacket')">
+          Jacket
+        </button>
+        <button class="button-value" onclick="filterProduct('Watch')">
+          Watch
+        </button>
+        <button class="button-value" onclick="filterProduct('Kurti')">
+          Kurti
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+    </div>
+    
+  <script src="collections.js"></script>
+  </body>
+</html> 
